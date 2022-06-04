@@ -9,6 +9,12 @@ class StyledComment(UserAdmin):
     ordering = ('-post',)
     list_filter = ()
 
+class StylePost(UserAdmin):
+    list_display = ('image','host', 'description', 'date_posted')
+    filter_horizontal = ()
+    fieldsets = ()
+    ordering = ('-date_posted',)
+    list_filter = ()
 
 
 admin.site.register(Comment, StyledComment)
