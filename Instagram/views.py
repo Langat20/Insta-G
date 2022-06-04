@@ -2,7 +2,7 @@ from django.shortcuts import redirect, render
 from django.contrib.auth.decorators import login_required
 from django.contrib import messages
 from django.db.models import Q
-from accounts.models import UserAccount
+from Accounts.models import UserAccount
 from .models import Comment, Post, Like
 
 @login_required(login_url='login')
