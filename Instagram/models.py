@@ -14,3 +14,16 @@ class Post(models.Model):
         return self.description
 
 
+class Comment(models.Model):
+    user = models.ForeignKey(UserAccount, on_delete=models.CASCADE, related_name='users')
+    post = models.ForeignKey(Post, on_delete = models.CASCADE, related_name='comments')
+    body = models.CharField(max_length=200)
+    date_posted = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        ordering = ['-date_posted']
+        
+    def __str__(self):
+        return self.body
+
+
