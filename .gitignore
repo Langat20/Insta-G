@@ -1,0 +1,6 @@
+.env/
+virtual/
+pycache/
+__pycache__/
+djangoenv/
+
