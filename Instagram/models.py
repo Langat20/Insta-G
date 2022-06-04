@@ -27,3 +27,15 @@ class Comment(models.Model):
         return self.body
 
 
+LIKED_CHOICES = (
+    ('like', 'like'),
+    ('unlike', 'unlike')
+)
+class Like(models.Model):
+    user = models.ForeignKey(UserAccount, on_delete=models.CASCADE)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    value = models.CharField(choices=LIKED_CHOICES, max_length=10)
+
+    def __str__(self):
+        return str(self.post)
+
