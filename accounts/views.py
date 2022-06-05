@@ -13,7 +13,7 @@ from django.utils.encoding import force_bytes
 from django.contrib.auth.tokens import default_token_generator
 from django.contrib.auth import authenticate, login, logout
 
-from Instagram.models import Post
+from instagram.models import Post
 
 def login_user(request):
 
