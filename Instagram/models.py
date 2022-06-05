@@ -1,5 +1,5 @@
 from django.db import models
-from accounts.models import UserAccount
+from Accounts.models import UserAccount
 from cloudinary.models import CloudinaryField
 
 class Post(models.Model):
