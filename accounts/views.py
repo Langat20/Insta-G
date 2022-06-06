@@ -143,7 +143,7 @@ def follower_count(request):
        value = request.POST.get('value')
        user = request.POST.get('user')
        follower = request.POST.get('follower')
-    #    print(value)
+       print(value)
        if value == 'follow':
            followers_cnt = Followers_Following.objects.create(follower=follower, user=user)
            followers_cnt.save()

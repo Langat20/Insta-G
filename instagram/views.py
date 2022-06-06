@@ -47,7 +47,7 @@ def post_comment(request, post_id):
                 post = post,
                 body = comment
             )
-            # comments.save()
+            comments.save()
             return redirect('home')
     else: 
         print("invalid data")

@@ -17,6 +17,7 @@
   font-family: "Calligraffitti", cursive;
   font-size: 2.5rem;
   font-weight: bold;
+  color:rgb(176, 94, 173);
 }
 /* login / register styles */
 .form-card {
@@ -35,7 +36,7 @@
 .btn-block {
   margin-left: auto;
   margin-right: auto;
-  width: 270px;
+  width: auto;
 }
 .list-group-flush {
   margin-right: auto;
@@ -59,10 +60,10 @@
   margin-bottom: 0.4rem;
 
 }
-/* .rounded-circle {
+.rounded-circle {
   height: 130px;
   width: 130px;
-} */
+}
 .username {
   margin-left: 0.5rem;
 }
@@ -86,4 +87,7 @@
   background: none;
   padding: 0px;
   border: none;
+}
+.row{
+  background-color: rgb(215, 240, 232);
 }
